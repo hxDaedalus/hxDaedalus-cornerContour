@@ -1,0 +1,25 @@
+-cp src
+-js bitmapPathfinding.js
+-lib fracs
+-lib justPath
+-lib pallette
+-lib hxPolyK
+-lib poly2trihx 
+-lib hxGeomAlgo
+-lib cornerContour
+-lib htmlHelper
+-lib hxDaedalus
+
+-main hxDaedalusCornerContour.BitmapPathfinding
+-D js-flatten 
+-dce full
+#--no-traces
+--next
+
+-D source-map-content
+-D js-source-map
+-debug
+
+-cmd echo '<!DOCTYPE html><meta charset="UTF-8"><html><body><script src="bitmapPathfinding.js"></script></body></html>' >bitmapPathfinding.html
+# open html on mac os.
+-cmd open bitmapPathfinding.html

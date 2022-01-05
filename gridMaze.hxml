@@ -1,0 +1,21 @@
+-cp src
+-js gridMaze.js
+-lib fracs
+-lib justPath
+-lib pallette
+-lib hxPolyK
+-lib poly2trihx 
+-lib hxGeomAlgo
+-lib cornerContour
+-lib htmlHelper
+-lib hxDaedalus
+
+-main hxDaedalusCornerContour.GridMaze
+-D js-flatten 
+-dce full
+#--no-traces
+--next
+
+-cmd echo '<!DOCTYPE html><meta charset="UTF-8"><html><body><script src="gridMaze.js"></script></body></html>' >gridMaze.html
+# open html on mac os.
+-cmd open gridMaze.html
